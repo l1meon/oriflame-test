@@ -50,17 +50,23 @@ html
         .nav-style
           ul.nav.nav-pills
             li#home = link_to 'Pagina principala', root_path, class: cur_path(root_path)
-            li = link_to 'Piele', category_path(23)
-            li = link_to 'Machiaj', category_path(24)
-            li = link_to 'Parfumuri', category_path(25)
-            li = link_to 'Corp', category_path(26)
-            li = link_to 'Par', category_path(27)
-            li = link_to 'Accesorii', category_path(28)
-            li = link_to 'Pentru Barbati', category_path(29)
-            li = link_to 'Very me', category_path(30)
-            li = link_to 'Wellness', category_path(31)
+            li = link_to 'Piele', category_path(1)
+            li = link_to 'Machiaj', category_path(2)
+            li = link_to 'Parfumuri', category_path(3)
+            li = link_to 'Corp', category_path(4)
+            li = link_to 'Par', category_path(5)
+            li = link_to 'Accesorii', category_path(6)
+            li = link_to 'Pentru Barbati', category_path(7)
+            li = link_to 'Very me', category_path(8)
+            li = link_to 'Wellness', category_path(9)
       == yield
       footer
-        .row-fluid
-          p &copy; 2014 Oriflame-Partner
+        p
+          ul
+            li
+              = link_to 'Informatii de contact', '#'
+            li
+              = link_to 'FAQ', '#', class: 'faq_border'
+            li
+              = link_to 'Oportunitati cu Oriflame', '#'
     = javascript_include_tag "application", "data-turbolinks-track" => true

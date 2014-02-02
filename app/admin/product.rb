@@ -12,10 +12,11 @@ ActiveAdmin.register Product do
     f.inputs "Детали" do
       f.input :category_id, label:'Категория', :as => :select, :collection => Category.all.map{|c| ["#{c.name}", c.id]}
       f.input :title, label: 'Наименование'
-      f.input :image_url
-      f.input :description
-      f.input :about_product
-      f.input :ingredients
+      f.input :image_url, "Картинка"
+      f.input :description, "Описание"
+      f.input :about_product, "О продукте"
+      f.input :ingredients, "Ингредиенты"
+      f.input :price, "Стоимость"
     end
     f.actions
   end
