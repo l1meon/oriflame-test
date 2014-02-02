@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="dataSourceStorage">
+  <data-source source="LOCAL" name="Rails Oriflame: development" uuid="5a22aff8-3f77-431c-873b-d6de2afd7f2c">
+    <database-info product="" version="" jdbc-version="" driver-name="" driver-version=""/>
+  </data-source>
+  <data-source source="LOCAL" name="Rails Oriflame: test" uuid="00cdea90-3b0e-4833-b8f4-6cd9e636e1cf">
+    <database-info product="" version="" jdbc-version="" driver-name="" driver-version=""/>
+  </data-source>
+  <data-source source="LOCAL" name="Rails Oriflame: production" uuid="c6cd2259-af8a-4fb4-bc56-a5815296cbea">
+    <database-info product="" version="" jdbc-version="" driver-name="" driver-version=""/>
+  </data-source>
+</component>

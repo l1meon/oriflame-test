@@ -1,0 +1,66 @@
+doctype html
+html
+  head
+    title Oriflame
+    = stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true
+    meta name="viewport" content="width=device-width, initial-scale=1.0"
+    meta charset="utf-8"
+    link rel="shortcut icon" href="Oriflame-20140111-favicon.ico"
+    = csrf_meta_tags
+  body class="#{controller.controller_name}"
+    .container.top-container.bx-shadow
+      .row-fluid.top-header
+        p Partener Oriflame Railean Dumitru
+        h1 Va intereseaza businessu cu Oriflame?
+    .container.bx-shadow.wrapper
+      .row-fluid.top-nav
+        .col-sm-1
+          ul
+            li = link_to_unless I18n.locale == :ru, "Руский", locale: :ru
+            li.ro = link_to_unless I18n.locale == :ro, "Romana", locale: :ro
+        .col-sm-1.sl
+          = link_to '#', class:'chevron' do
+            i.ic.fa.fa-arrow-down.fa-lg
+        .pull-right
+          ul
+            li  = link_to 'Cum fac comanda', '#', class: 'green'
+            | |
+            li = link_to 'Fii client','#', class: 'green '
+      header
+        .row-fluid.mid-head
+          .modal.fade#myModal tab-index='-1' role='dialog' aria-labelledby='myModalLabel' aria-hidden='true'
+            .modal-dialog
+              .modal-content
+                .modal-header
+                  button type='button' class='close' data-dismiss='modal' aria-hidden='true' &times;
+                  h4.modal-title#myModalLabel Cos
+                .modal-body
+                  -unless @cart.blank?
+                    == render @cart
+                .modal-footer
+                  button type="button" class="btn btn-default" data-dismiss="modal" Inchide
+                  button type="button" class="btn btn-primary" Salveaza comanda
+          .cart
+            = link_to '#', data: {target:'#myModal', toggle:'modal'} do
+              i.fa.fa-shopping-cart.fa-5x
+          .oriflame
+            = link_to root_path do
+              = image_tag('new-logo-v35.jpg')
+      nav
+        .nav-style
+          ul.nav.nav-pills
+            li#home = link_to 'Pagina principala', root_path, class: cur_path(root_path)
+            li = link_to 'Piele', category_path(23)
+            li = link_to 'Machiaj', category_path(24)
+            li = link_to 'Parfumuri', category_path(25)
+            li = link_to 'Corp', category_path(26)
+            li = link_to 'Par', category_path(27)
+            li = link_to 'Accesorii', category_path(28)
+            li = link_to 'Pentru Barbati', category_path(29)
+            li = link_to 'Very me', category_path(30)
+            li = link_to 'Wellness', category_path(31)
+      == yield
+      footer
+        .row-fluid
+          p &copy; 2014 Oriflame-Partner
+    = javascript_include_tag "application", "data-turbolinks-track" => true

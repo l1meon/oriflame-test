@@ -1,0 +1,5 @@
+= render (cart.items)
+li
+  span.label.label-success Total: #{cart.total_price}
+li = button_to 'Salvati comanda',new_order_path, method: :get
+li = button_to 'Sterge produsele din cos', @cart, method: :delete, data: { confirm: 'Вы уверены?!'}

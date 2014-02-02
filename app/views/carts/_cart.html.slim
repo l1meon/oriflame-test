@@ -1,0 +1,11 @@
+-if cart.items.empty?
+  h1 Корзина пуста!
+-else
+  = render (cart.items)
+  li
+    span.label.label-success #{@cart.total_price}
+  .row-fluid
+    .col-md-3
+      = button_to 'Оформить заказ', new_order_path, method: :get, class: 'btn btn-info'
+    .col-md-3.pull-right
+      = button_to 'Очитсить корзину', @cart, method: :delete, class: 'btn btn-danger'

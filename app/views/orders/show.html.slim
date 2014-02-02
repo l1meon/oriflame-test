@@ -1,0 +1,20 @@
+p#notice = notice
+
+p
+  strong Name:
+  = @order.first_name
+p
+  strong Email:
+  = @order.email
+p
+  strong Tel:
+  = @order.phone
+
+.row_fluid
+  h1 Items
+  - @order.items.each do |o|
+    = o.product.title
+
+= link_to 'Edit', edit_order_path(@order)
+'|
+= link_to 'Back', orders_path

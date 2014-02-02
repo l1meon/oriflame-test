@@ -1,0 +1,66 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+ *= require_self
+ *= require twitter/bootstrap
+ *= require font-awesome
+ *= require jquery.ui.all
+ *= require_tree .
+ */
+
+$link-hover: #ed1c2e
+$border-color: #dbdbdb
+$head-link-color: #8e8e8e
+*
+  -webkit-box-sizing: border-box
+  box-sizing: border-box
+.wrapper
+  min-height: 600px
+  background-color: #fff
+
+.home, .categories, .products, .carts, .items, .orders
+  background: url("http://subtlepatterns.com/patterns/greyzz.png")
+  background-repeat: repeat
+  padding: 0
+  margin: 0
+  .container
+    background-color: #fff
+    padding: 0
+  .top-container
+    background-color: #AEF26B
+    .top-header
+      display: none
+  .top-nav
+    padding: 5px
+    height: 30px
+    border-bottom: 1px dotted $border-color
+    ul
+      li
+        a
+          color: $head-link-color !important
+    a
+      text-decoration: none
+      &:hover
+        color: $link-hover !important
+    ul
+      display: inline-block
+      li
+        list-style: none
+        display: inline
+        margin: 0 3px
+  .sl
+    left: 50%
+    right: 50%
+    position: absolute
+    .chevron
+      color: $head-link-color
+  .oriflame
+    width: 184px
+    margin: 50px auto

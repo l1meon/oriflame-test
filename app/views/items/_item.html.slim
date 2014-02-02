@@ -1,0 +1,6 @@
+- if item == @current_item
+  tr#current_item
+-else
+  li
+    span #{item.quantity} &times; #{item.product.title}
+    span.label.label-info #{item.total_price} Лей

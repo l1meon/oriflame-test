@@ -1,0 +1,33 @@
+.container
+  .slider.bx-shadow
+    #carousel-example-generic.carousel.slide data-ride='carousel'
+      ol.carousel-indicators
+        li.active data-target='#carousel-example-generic' data-slide-to='0'
+        li data-target='#carousel-example-generic' data-slide-to='1'
+        li data-target='#carousel-example-generic' data-slide-to='2'
+        li data-target='#carousel-example-generic' data-slide-to='3'
+      .carousel-inner
+        .item.active
+          = image_tag('http://md.oriflame.com/content-storage-v3/live/images/mo_MD/60100097-1749400141-FPM_PowerMusk.jpg',class: 'slide-img')
+          .carousel-caption
+            p Apa de toaleta Power Musk
+            h1 O ispita Imbietoare...
+        .item
+          = image_tag('http://md.oriflame.com/content-storage-v3/live/images/mo_MD/60100096-1749400140-FPM_ScarlettScale_UA.jpg', class: 'slide-img')
+          .carousel-caption
+            p R
+            h1 ВСЕГО 169.00 ЛЕЕВ.
+        .item
+          = image_tag('http://md.oriflame.com/content-storage-v3/live/images/mo_MD/60100093-1749400136-FPM.jpg', class: 'slide-img')
+          .carousel-caption
+            p R
+            h1 ПОЛЕЗНЫЙ ЗАРЯД ЭНЕРГИИ!
+        .item
+          = image_tag('http://md.oriflame.com/content-storage-v3/live/images/mo_MD/60100095-1749400139-FPM_Volare_UA.jpg', class: 'slide-img')
+          .carousel-caption
+            p R
+            h1 Когда расцветает любовь...
+      a.left.carousel-control href='#carousel-example-generic' data-slide='prev'
+        span.glyphicon.glyphicon-chevron-left
+      a.right.carousel-control href='#carousel-example-generic' data-slide='next'
+        span.glyphicon.glyphicon-chevron-right

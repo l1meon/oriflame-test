@@ -1,0 +1,79 @@
+doctype html
+html
+  head
+    title Oriflame
+    = stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true
+    meta name="viewport" content="width=device-width, initial-scale=1.0"
+    meta charset="utf-8"
+    link rel="shortcut icon" href="Oriflame-20140111-favicon.ico"
+    = csrf_meta_tags
+  body class="#{controller.controller_name}"
+    .container.top-container.bx-shadow
+      .row-fluid.top-header
+        p Партнер Орифлэйм Райлян Дмитрий
+        h1 Интересует бизнес с Орифлэйм?
+    .container.bx-shadow.wrapper
+      .row-fluid.top-nav
+        .col-sm-1
+          ul
+            li.ru = link_to_unless I18n.locale == :ru, "Руский", locale: :ru
+            li = link_to_unless I18n.locale == :ro, "Romana", locale: :ro
+        .col-sm-1.sl
+          = link_to '#', class:'chevron' do
+            i.ic.fa.fa-arrow-down.fa-lg
+        .pull-right
+          ul
+            li = link_to 'Как заказать', '#', class: 'green'
+            | |
+            li = link_to 'Стать клиентом', '#', class: 'green '
+      header
+        .row-fluid.mid-head
+          .modal.fade#myModal tab-index='-1' role='dialog' aria-labelledby='myModalLabel' aria-hidden='true'
+            .modal-dialog
+              .modal-content
+                .modal-header
+                  button type='button' class='close' data-dismiss='modal' aria-hidden='true' &times;
+                  h4.modal-title#myModalLabel Корзина
+                .modal-body
+                  -unless @cart.blank?
+                    == render @cart
+                .modal-footer
+                  button type="button" class="btn btn-default" data-dismiss="modal" Закрыть
+          .cart
+            = link_to '#', data: {target:'#myModal', toggle:'modal'} do
+              i.fa.fa-shopping-cart.fa-5x
+              br
+              span Корзина
+
+          .oriflame
+            = link_to root_path do
+              = image_tag('new-logo-v35.jpg')
+
+      nav
+        .nav-style
+          ul.nav.nav-pills
+            li#home = link_to 'Главная', root_path, class: cur_path(root_path)
+            li = link_to 'Для лица', category_path(23)
+            li = link_to 'Макиаж', category_path(24)
+            li = link_to 'Парфюмерия', category_path(25)
+            li = link_to 'Для тела', category_path(26)
+            li = link_to 'Для волос', category_path(27)
+            li = link_to 'Акссесуары', category_path(28)
+            li = link_to 'Для Мужчин', category_path(29)
+            li = link_to 'Very me', category_path(30)
+            li = link_to 'Wellness', category_path(31)
+      section
+        .container
+          == yield
+      footer
+
+        p
+          ul
+            li
+              = link_to 'Контактная информация', '#'
+            li
+              = link_to 'FAQ', '#', class: 'faq_border'
+            li
+              = link_to 'Возможности с Орифлэйм', '#'
+
+    = javascript_include_tag "application", "data-turbolinks-track" => true

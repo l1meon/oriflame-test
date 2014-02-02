@@ -1,0 +1,24 @@
+.row-fluid
+  = form_tag items_path do
+    = hidden_field_tag :product_id, @product.id
+    .col-md-3
+      = image_tag (@product.image_url)
+    .col-md-2.sp_slide.border.pull-right
+      | Slider
+    .col-sm-6.desc
+      h3 = @product.title
+    .col-sm-6
+      p = raw @product.description
+    .col-sm-6
+      p.price
+        span.label.label-success Цена:  #{@product.price} Лей
+      p = submit_tag 'Добавить в корзину', class: 'btn btn-danger'
+    .col-lg-10
+      .tabs
+        ul
+          li = link_to 'О продукте', '#tabs-1'
+          li = link_to 'Список ингредиентов', '#tabs-2'
+        #tabs-1
+          p = raw @product.about_product
+        #tabs-2
+          p = raw @product.ingredients

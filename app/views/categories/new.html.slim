@@ -1,0 +1,7 @@
+.row-fluid
+  - @category.errors.full_messages.each do |msg|
+    = msg
+  =form_for @category, url: categories_path(@category.id) do |f|
+    =f.label :Имя
+    =f.text_field :name
+    =f.submit
