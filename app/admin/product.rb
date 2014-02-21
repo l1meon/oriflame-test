@@ -8,18 +8,7 @@ ActiveAdmin.register Product do
 
   end
 
-  form do |f|
-    f.inputs "Детали" do
-      f.input :category_id, label:'Категория', :as => :select, :collection => Category.all.map{|c| ["#{c.name}", c.id]}
-      f.input :title, label: 'Наименование'
-      f.input :image_url, label: "Картинка"
-      f.input :description, label: "Описание"
-      f.input :about_product, label: "О продукте"
-      f.input :ingredients, label: "Ингредиенты"
-      f.input :price, label: "Стоимость"
-    end
-    f.actions
-  end
+  form partial: 'form'
 
 
   index title: 'Продукты' do
@@ -38,19 +27,5 @@ ActiveAdmin.register Product do
       links
     end
   end
-
-
-  # See permitted parameters documentation:
-  # https://github.com/gregbell/active_admin/blob/master/docs/2-resource-customization.md#setting-up-strong-parameters
-  #
-  # permit_params :list, :of, :attributes, :on, :model
-  #
-  # or
-  #
-  # permit_params do
-  #  permitted = [:permitted, :attributes]
-  #  permitted << :other if resource.something?
-  #  permitted
-  # end
   
 end

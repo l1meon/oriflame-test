@@ -8,6 +8,10 @@ html
     link rel="shortcut icon" href="Oriflame-20140111-favicon.ico"
     = csrf_meta_tags
   body class="#{controller.controller_name}"
+    - if notice || alert
+      .notice.alert.alert-danger.alert-dismissable
+        button type="button" class="close" data-dismiss="alert" aria-hidden="true" &times;
+        = alert
     .container.top-container.bx-shadow
       .row-fluid.top-header
         p Партнер Орифлэйм Райлян Дмитрий
@@ -48,7 +52,6 @@ html
           .oriflame
             = link_to root_path do
               = image_tag('new-logo-v35.jpg')
-
       nav
         .nav-style
           ul.nav.nav-pills

@@ -1,6 +1,21 @@
-- if item == @current_item
-  tr#current_item
--else
-  li
-    span #{item.quantity} &times; #{item.product.title}
-    span.label.label-info #{item.total_price} Лей
+.col-md-4.p_b
+  = item.quantity
+.col-md-4.p_b
+  = item.product.title
+.col-md-4.p_b
+  = item.total_price
+  /.col-sm-4.panel.panel-info
+    .panel-heading
+      | Кольво
+    .panel-body
+      = item.quantity
+  /.col-sm-4.panel.panel-info
+    .panel-heading
+      | Название
+    .panel-body
+      =item.product.title
+  /.col-md-4.panel.panel-info
+    .panel-heading
+      | Всего
+    .panel-body
+      | #{item.total_price} Лей

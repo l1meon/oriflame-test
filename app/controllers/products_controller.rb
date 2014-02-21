@@ -1,6 +1,7 @@
 class ProductsController < ApplicationController
 
   before_action :set_product, only: [ :show, :edit, :update,  :destroy]
+  before_filter :authenticate_admin!, except: [:index, :show]
   respond_to :html, :xml, :json
 
   def index
@@ -36,6 +37,9 @@ class ProductsController < ApplicationController
 
   def set_product
     @category = Product.find(params[:id])
+  rescue ActiveRecord::RecordNotFound
+    flash[:alert] = "Продукт не найден!"
+    redirect_to root_path
   end
 
   def product_params

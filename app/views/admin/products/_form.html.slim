@@ -1,0 +1,81 @@
+= semantic_form_for [:admin, @product], role: 'form' do |f|
+  .panel-group#accordion
+    .panel.panel-default
+      .panel-heading
+        h4.panel-title
+          = link_to 'Название/Denumire', '#collapse1', data: { toggle: 'collapse', parrent: 'accordion'}
+      #collapse1.panel-collapse.collapse
+        .panel-body
+          .form-group
+            .row
+              .col-xs-10
+                = f.input :title, :label => 'Ру', class:'form-control'
+              .col-xs-10
+                = f.input :title_ro, label: 'Ro', class:'form-control'
+    .panel.panel-default
+      .panel-heading
+        h4.panel-title
+          = link_to 'Категория/Categoria ', '#collapse8', data: { toggle: 'collapse', parrent: 'accordion'}
+      #collapse8.panel-collapse.collapse
+        .panel-body
+          .form-group
+            .row
+              .col-xs-4
+                = f.input :category_id, :as => :select, :collection => Category.all.map{|c| ["#{c.name}", c.id]}, :label => 'Категория/Categoria', input_html:{class:'form-control'}
+    .panel.panel-default
+      .panel-heading
+        h4.panel-title
+          = link_to 'Фото/Imaginea', '#collapse9', data: { toggle: 'collapse', parrent: 'accordion'}
+      #collapse9.panel-collapse.collapse
+        .panel-body
+          .form-group
+            .row
+              .col-xs-8
+                = f.input :image_url, label: 'Фото/Imaginea', class:'form-control img-i'
+    .panel.panel-default
+      .panel-heading
+        h4.panel-title
+          = link_to 'Description', '#collapse3', data: { toggle: 'collapse', parrent: 'accordion'}
+      #collapse3.panel-collapse.collapse
+        .panel-body
+          .form-group
+            .row
+              .col-xs-5
+                = f.input :description, :label => 'Ру', class:'form-control'
+              .col-xs-5
+                = f.input :description_ro, label: 'Ro', class:'form-control'
+    .panel.panel-default
+      .panel-heading
+        h4.panel-title
+          = link_to 'About Product', '#collapse4', data: { toggle: 'collapse', parrent: 'accordion'}
+      #collapse4.panel-collapse.collapse
+        .panel-body
+          .form-group
+            .row
+              .col-xs-5
+                = f.input :about_product, :label => 'Ру', class:'form-control'
+              .col-xs-5
+                = f.input :about_product_ro, label: 'Ro', class:'form-control'
+    .panel.panel-default
+      .panel-heading
+        h4.panel-title
+          = link_to 'Ingredients', '#collapse5', data: { toggle: 'collapse', parrent: 'accordion'}
+      #collapse5.panel-collapse.collapse
+        .panel-body
+          .form-group
+            .row
+              .col-xs-5
+                = f.input :ingredients, :label => 'Ру', class:'form-control'
+              .col-xs-5
+                = f.input :ingredients_ro, label: 'Ro', class:'form-control'
+    .panel.panel-default
+      .panel-heading
+        h4.panel-title
+          = link_to 'Price', '#collapse6', data: { toggle: 'collapse', parrent: 'accordion'}
+      #collapse6.panel-collapse.collapse
+        .panel-body
+          .form-group
+            .row
+              .col-xs-5
+                = f.input :price, :label => 'Цена', class:'form-control'
+  =f.actions

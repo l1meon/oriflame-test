@@ -1,5 +1,6 @@
 class CategoriesController < ApplicationController
   before_action :set_category, only: [ :show, :edit, :update,  :destroy]
+  before_filter :authenticate_admin!, except: [:index, :show]
   respond_to :html, :xml, :json
 
   def index
@@ -43,6 +44,8 @@ class CategoriesController < ApplicationController
 
   def set_category
     @category = Category.find(params[:id])
+  rescue ActiveRecord::RecordNotFound
+    redirect_to root_path, alert: "Категория не найдена!"
   end
 
   def category_params
