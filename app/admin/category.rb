@@ -2,7 +2,7 @@ ActiveAdmin.register Category do
   menu label: 'Категории'
   controller do
     def permitted_params
-      params.permit(:category => [:name])
+      params.permit(:category => [:name, :name_ro])
     end
 
   end

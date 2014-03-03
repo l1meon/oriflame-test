@@ -32,22 +32,11 @@ html
             li = link_to 'Стать клиентом', '#', class: 'green '
       header
         .row-fluid.mid-head
-          .modal.fade#myModal tab-index='-1' role='dialog' aria-labelledby='myModalLabel' aria-hidden='true'
-            .modal-dialog
-              .modal-content
-                .modal-header
-                  button type='button' class='close' data-dismiss='modal' aria-hidden='true' &times;
-                  h4.modal-title#myModalLabel Корзина
-                .modal-body
-                  -unless @cart.blank?
-                    == render @cart
-                .modal-footer
-                  button type="button" class="btn btn-default" data-dismiss="modal" Закрыть
           .cart
-            = link_to '#', data: {target:'#myModal', toggle:'modal'} do
+            = link_to @cart do
               i.fa.fa-shopping-cart.fa-5x
               br
-              span Корзина
+              span Товаров на #{@cart.total_price} Лей
 
           .oriflame
             = link_to root_path do
@@ -69,13 +58,12 @@ html
         .container
           == yield
       footer
-        p
-          ul
-            li
-              = link_to 'Контактная информация', '#'
-            li
-              = link_to 'FAQ', '#', class: 'faq_border'
-            li
-              = link_to 'Возможности с Орифлэйм', '#'
+        ul
+          li
+            = link_to 'Контактная информация', '#'
+          li
+            = link_to 'FAQ', faq_path, class: 'faq_border'
+          li
+            = link_to 'Возможности с Орифлэйм', '#'
 
     = javascript_include_tag "application", "data-turbolinks-track" => true

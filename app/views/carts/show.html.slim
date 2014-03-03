@@ -1,2 +1,6 @@
-= render @cart
-= link_to 'Edit', edit_cart_path(@cart), class: 'label label-warning'
+- if @cart.items.empty?
+  .row
+    .col-md-12
+      h1 Корзина пуста!
+-else
+  = render @cart

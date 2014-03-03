@@ -1,11 +1,11 @@
 class ProductsController < ApplicationController
-
+  include CurrentCart
   before_action :set_product, only: [ :show, :edit, :update,  :destroy]
   before_filter :authenticate_admin!, except: [:index, :show]
+  before_action :set_cart
   respond_to :html, :xml, :json
 
   def index
-    @cart = current_cart
     @products = Product.all
   end
 
@@ -43,6 +43,6 @@ class ProductsController < ApplicationController
   end
 
   def product_params
-    params.require(:product).permit(:title, :description, :image_url, :about_product, :ingredients, :category_id)
+    params.require(:product).permit(:title, :title_ro, :description, :description_ro,:image_url, :about_product, :about_product_ro, :ingredients, :ingredients_ro, :category_id)
   end
 end

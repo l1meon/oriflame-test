@@ -1,16 +1,16 @@
--if cart.items.empty?
-  h1 Корзина пуста!
--else
-  .col-md-4
-    | Кольво
-  .col-md-4
-    | Name
-  .col-md-4
-    | Total Price
-  = render (cart.items)
-  .col-md-12.p_b
-    | Всего:
-    .label.label-success #{@cart.total_price}
-  .col-md-12
-    = button_to 'Оформить заказ', new_order_path, method: :get, class: 'btn btn-info'
-    = button_to 'Очитсить корзину', @cart, method: :delete, class: 'btn btn-danger'
+.row.cart_show
+  .col-md-4.bold
+    | Товар
+  .col-md-3.bold
+    | Количество
+  .col-md-2.bold
+    | Цена
+  .col-md-3.bold
+    | Итого
+  hr
+= render (cart.items)
+.row
+  .col-md-4.pull-right
+    h3 Всего к оплате: #{@cart.total_price} Лей
+    = button_to 'Оформить заказ', new_order_path, method: :get, class: 'btn btn-danger pull-left cart_button'
+    = button_to 'Очитсить корзину', @cart, method: :delete, class: 'btn btn-info cart_button'

@@ -3,7 +3,7 @@ ActiveAdmin.register Product do
 
   controller do
     def permitted_params
-      params.permit(:product => [:title, :description, :image_url, :about_product, :ingredients, :category_id, :price])
+      params.permit(:product => [:title, :title_ro, :description, :description_ro, :image_url, :about_product, :about_product_ro, :ingredients, :ingredients_ro, :category_id, :price])
     end
 
   end
