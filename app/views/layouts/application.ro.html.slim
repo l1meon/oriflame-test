@@ -8,6 +8,10 @@ html
     link rel="shortcut icon" href="Oriflame-20140111-favicon.ico"
     = csrf_meta_tags
   body class="#{controller.controller_name}"
+    - if notice || alert
+      .notice.alert.alert-danger.alert-dismissable
+        button type="button" class="close" data-dismiss="alert" aria-hidden="true" &times;
+        = alert
     .container.top-container.bx-shadow
       .row-fluid.top-header
         p Partener Oriflame Railean Dumitru
@@ -28,21 +32,11 @@ html
             li = link_to 'Fii client','#', class: 'green '
       header
         .row-fluid.mid-head
-          .modal.fade#myModal tab-index='-1' role='dialog' aria-labelledby='myModalLabel' aria-hidden='true'
-            .modal-dialog
-              .modal-content
-                .modal-header
-                  button type='button' class='close' data-dismiss='modal' aria-hidden='true' &times;
-                  h4.modal-title#myModalLabel Cos
-                .modal-body
-                  -unless @cart.blank?
-                    == render @cart
-                .modal-footer
-                  button type="button" class="btn btn-default" data-dismiss="modal" Inchide
-                  button type="button" class="btn btn-primary" Salveaza comanda
           .cart
-            = link_to '#', data: {target:'#myModal', toggle:'modal'} do
+            = link_to @cart do
               i.fa.fa-shopping-cart.fa-5x
+              br
+              span Produse in suma de #{@cart.total_price} Lei
           .oriflame
             = link_to root_path do
               = image_tag('new-logo-v35.jpg')
@@ -59,14 +53,15 @@ html
             li = link_to 'Pentru Barbati', category_path(7)
             li = link_to 'Very me', category_path(8)
             li = link_to 'Wellness', category_path(9)
-      == yield
+      section
+        .container.min_height
+          == yield
       footer
-        p
-          ul
-            li
-              = link_to 'Informatii de contact', '#'
-            li
-              = link_to 'FAQ', '#', class: 'faq_border'
-            li
-              = link_to 'Oportunitati cu Oriflame', '#'
+        ul
+          li
+            = link_to 'Informatii de contact', '#'
+          li
+            = link_to 'FAQ', '#', class: 'faq_border'
+          li
+            = link_to 'Oportunitati cu Oriflame', '#'
     = javascript_include_tag "application", "data-turbolinks-track" => true

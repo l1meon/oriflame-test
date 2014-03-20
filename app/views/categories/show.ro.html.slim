@@ -1,0 +1,6 @@
+.row-fluid
+  -@category.products.each do |cp|
+    .col-md-3.cat_prod
+      = link_to  cp do
+        h4 = cp.title_ro
+        = image_tag(cp.image_url)

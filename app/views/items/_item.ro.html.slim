@@ -1,0 +1,13 @@
+- if item == @current_item
+  #current_item
+-else
+  .row.bd
+    .col-md-4
+      = raw image_tag(item.product.image_url, class: 'item_img_icon')
+      = link_to item.product.title, product_path(item.product.id)
+    .col-md-3
+      p = item.quantity
+    .col-md-2
+      p = item.product.price
+    .col-md-3
+      p #{item.total_price} Lei

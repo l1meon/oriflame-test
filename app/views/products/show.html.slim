@@ -1,7 +1,7 @@
 .row-fluid
   = hidden_field_tag :product_id, @product.id
   .col-md-3
-    = image_tag (@product.image_url)
+    = image_tag (@product.image_url), class:'product_image'
   .col-md-2.sp_slide.border.pull-right
     | Slider
   .col-sm-6.desc

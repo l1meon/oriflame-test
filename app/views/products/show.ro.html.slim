@@ -1,0 +1,23 @@
+.row-fluid
+  = hidden_field_tag :product_id, @product.id
+  .col-md-3
+    = image_tag (@product.image_url), class:'product_image'
+  .col-md-2.sp_slide.border.pull-right
+    | Slider
+  .col-sm-6.desc
+    h3 = @product.title_ro
+  .col-sm-6
+    p = raw @product.description_ro
+  .col-sm-6
+    p.price
+      span.label.label-success Pret:  #{@product.price} Lei
+    p = button_to 'Adauga in cos', items_path(product_id: @product), class: 'btn btn-danger'
+  .col-lg-10
+    .tabs
+      ul
+        li = link_to 'Despre produs', '#tabs-1'
+        li = link_to 'Lista ingredientelor', '#tabs-2'
+      #tabs-1
+        p = raw @product.about_product_ro
+      #tabs-2
+        p = raw @product.ingredients_ro
