@@ -23,37 +23,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="show.ro.html.slim" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/categories/show.ro.html.slim">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="24" selection-start="116" selection-end="116" vertical-scroll-proportion="0.0" vertical-offset="60" max-vertical-offset="165">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="show.html.slim" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/products/show.html.slim">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="59" selection-start="128" selection-end="128" vertical-scroll-proportion="-1.875" vertical-offset="0" max-vertical-offset="420">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Gemfile" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Gemfile">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="0" selection-start="159" selection-end="159" vertical-scroll-proportion="0.16506189" vertical-offset="0" max-vertical-offset="727">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="show.html.slim" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/categories/show.html.slim">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="33" selection-start="147" selection-end="147" vertical-scroll-proportion="0.0" vertical-offset="75" max-vertical-offset="165">
+            <state line="5" column="33" selection-start="147" selection-end="147" vertical-scroll-proportion="-3.125" vertical-offset="0" max-vertical-offset="165">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_form.html.slim" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/views/admin/products/_form.html.slim">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="13" column="50" selection-start="530" selection-end="530" vertical-scroll-proportion="0.2173913" vertical-offset="45" max-vertical-offset="1290">
               <folding />
             </state>
           </provider>
@@ -62,7 +44,7 @@
       <file leaf-file-name="show.ro.html.slim" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/products/show.ro.html.slim">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="36" selection-start="105" selection-end="128" vertical-scroll-proportion="0.0" vertical-offset="45" max-vertical-offset="420">
+            <state line="3" column="36" selection-start="105" selection-end="128" vertical-scroll-proportion="-1.875" vertical-offset="0" max-vertical-offset="420">
               <folding />
             </state>
           </provider>
@@ -124,20 +106,20 @@
         <option value="$PROJECT_DIR$/vendor/assets/javascripts/active_admin.js.coffee" />
         <option value="$PROJECT_DIR$/app/admin/product.rb" />
         <option value="$PROJECT_DIR$/vendor/assets/stylesheets/active_admin.css.scss" />
-        <option value="$PROJECT_DIR$/app/views/admin/products/_form.html.slim" />
         <option value="$PROJECT_DIR$/app/controllers/items_controller.rb" />
         <option value="$PROJECT_DIR$/app/models/cart.rb" />
         <option value="$PROJECT_DIR$/app/views/items/_item.ro.html.slim" />
         <option value="$PROJECT_DIR$/app/views/carts/_cart.ro.html.slim" />
         <option value="$PROJECT_DIR$/app/views/categories/show.ro.html.slim" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/custom.css.sass" />
-        <option value="$PROJECT_DIR$/app/assets/stylesheets/application.css.sass" />
         <option value="$PROJECT_DIR$/app/views/layouts/application.ro.html.slim" />
         <option value="$PROJECT_DIR$/app/views/layouts/application.html.slim" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/categories.css.sass" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/products.css.sass" />
         <option value="$PROJECT_DIR$/app/views/products/show.ro.html.slim" />
         <option value="$PROJECT_DIR$/app/views/products/show.html.slim" />
+        <option value="$PROJECT_DIR$/app/assets/stylesheets/application.css.sass" />
+        <option value="$PROJECT_DIR$/app/views/admin/products/_form.html.slim" />
       </list>
     </option>
   </component>
@@ -209,10 +191,6 @@
               <option name="myItemId" value="views" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="products" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -229,6 +207,14 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="admin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="products" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -283,6 +269,24 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Oriflame" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="oriflame-test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="admin" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -463,10 +467,10 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-1" y="-4" width="1922" height="1085" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23302938" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23302938" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.329582" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -568,11 +572,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/database.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="40" column="24" selection-start="1246" selection-end="1246" vertical-scroll-proportion="0.5293186" vertical-offset="266" max-vertical-offset="1035" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config/initializers/secret_token.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="15" column="8" selection-start="332" selection-end="332" vertical-scroll-proportion="0.35657686" vertical-offset="0" max-vertical-offset="631" />
@@ -630,16 +629,6 @@
         <state line="36" column="0" selection-start="866" selection-end="866" vertical-scroll-proportion="-22.5" vertical-offset="0" max-vertical-offset="660" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/admin/products/_form.html.slim">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="31" selection-start="651" selection-end="651" vertical-scroll-proportion="0.37063953" vertical-offset="0" max-vertical-offset="1290" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/admin/product.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="21" selection-start="256" selection-end="256" vertical-scroll-proportion="0.20689656" vertical-offset="0" max-vertical-offset="725" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/admin/category.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="30" column="0" selection-start="1194" selection-end="1194" vertical-scroll-proportion="0.62068963" vertical-offset="0" max-vertical-offset="725" />
@@ -677,7 +666,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/items_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="21" selection-start="435" selection-end="435" vertical-scroll-proportion="0.29780564" vertical-offset="0" max-vertical-offset="957" />
+        <state line="19" column="21" selection-start="435" selection-end="435" vertical-scroll-proportion="0.29780564" vertical-offset="0" max-vertical-offset="957">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/items/_item.ro.html.slim">
@@ -710,16 +701,11 @@
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="727" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/categories/show.ro.html.slim">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="24" selection-start="116" selection-end="116" vertical-scroll-proportion="0.0" vertical-offset="60" max-vertical-offset="165">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/custom.css.sass">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="81" column="15" selection-start="1530" selection-end="1530" vertical-scroll-proportion="0.5132743" vertical-offset="867" max-vertical-offset="1545" />
+        <state line="81" column="15" selection-start="1530" selection-end="1530" vertical-scroll-proportion="0.5132743" vertical-offset="867" max-vertical-offset="1545">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.slim">
@@ -737,21 +723,9 @@
         <state line="15" column="14" selection-start="424" selection-end="424" vertical-scroll-proportion="0.3200569" vertical-offset="0" max-vertical-offset="703" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/application.css.sass">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="38" column="12" selection-start="1132" selection-end="1132" vertical-scroll-proportion="0.8108108" vertical-offset="0" max-vertical-offset="1155" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/items.css.sass">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="727" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/categories/show.html.slim">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="33" selection-start="147" selection-end="147" vertical-scroll-proportion="0.0" vertical-offset="75" max-vertical-offset="165">
-          <folding />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/products.css.sass">
@@ -761,16 +735,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/products/show.ro.html.slim">
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/application.css.sass">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="36" selection-start="105" selection-end="128" vertical-scroll-proportion="0.0" vertical-offset="45" max-vertical-offset="420">
+        <state line="12" column="24" selection-start="577" selection-end="577" vertical-scroll-proportion="0.26548672" vertical-offset="0" max-vertical-offset="1155">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/products/show.html.slim">
+    <entry file="file://$PROJECT_DIR$/config/database.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="59" selection-start="128" selection-end="128" vertical-scroll-proportion="-1.875" vertical-offset="0" max-vertical-offset="420">
+        <state line="40" column="24" selection-start="1246" selection-end="1246" vertical-scroll-proportion="0.85470086" vertical-offset="0" max-vertical-offset="1035">
           <folding />
         </state>
       </provider>
@@ -778,6 +752,48 @@
     <entry file="file://$PROJECT_DIR$/Gemfile">
       <provider selected="true" editor-type-id="text-editor">
         <state line="8" column="0" selection-start="159" selection-end="159" vertical-scroll-proportion="0.16506189" vertical-offset="0" max-vertical-offset="727">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/products/show.html.slim">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="59" selection-start="128" selection-end="128" vertical-scroll-proportion="0.06401138" vertical-offset="0" max-vertical-offset="703">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/products/show.ro.html.slim">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="36" selection-start="105" selection-end="128" vertical-scroll-proportion="-1.875" vertical-offset="0" max-vertical-offset="420">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/categories/show.ro.html.slim">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="24" selection-start="116" selection-end="116" vertical-scroll-proportion="0.08534851" vertical-offset="0" max-vertical-offset="703">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/admin/product.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="21" selection-start="320" selection-end="320" vertical-scroll-proportion="0.21008404" vertical-offset="0" max-vertical-offset="714">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/categories/show.html.slim">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="33" selection-start="147" selection-end="147" vertical-scroll-proportion="-3.125" vertical-offset="0" max-vertical-offset="165">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/admin/products/_form.html.slim">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="50" selection-start="530" selection-end="530" vertical-scroll-proportion="0.2173913" vertical-offset="45" max-vertical-offset="1290">
           <folding />
         </state>
       </provider>
